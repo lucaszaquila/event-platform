@@ -18,7 +18,7 @@ interface GetLessonsQueryResponse {
         id: string;
         title: string;
         slug: string;
-        AvailableAt: string;
+        availableAt: string;
         lessonType: 'live' | 'class';
     }[]
 }
@@ -38,7 +38,7 @@ export function Sidebar() {
                             key={lesson.id}
                             title={lesson.title}
                             slug={lesson.slug}
-                            avaliableAt={new Date(lesson.AvailableAt)} 
+                            avaliableAt={new Date(lesson.availableAt)} 
                             type={lesson.lessonType}
                         />
                     )
